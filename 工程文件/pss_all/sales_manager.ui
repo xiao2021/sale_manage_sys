@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>sales_manager</class>
+ <widget class="QWidget" name="sales_manager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>498</width>
+    <height>342</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>sales_manager</string>
+  </property>
+  <widget class="QPushButton" name="add_order_pushbutton">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>120</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加订单</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="delivery_order_pushbutton">
+   <property name="geometry">
+    <rect>
+     <x>102</x>
+     <y>230</y>
+     <width>121</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>配送查询</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quit_pushbutton">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>230</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>退出登录</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="add_customer_info">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>120</y>
+     <width>121</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>添加客户信息</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

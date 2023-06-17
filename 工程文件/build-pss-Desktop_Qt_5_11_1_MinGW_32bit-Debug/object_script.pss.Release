@@ -1,0 +1,15 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\admin_main_page.o
+./release\new_delivery.o
+./release\sales_add_order.o
+./release\sales_customers.o
+./release\sales_manager.o
+./release\moc_mainwindow.o
+./release\moc_admin_main_page.o
+./release\moc_new_delivery.o
+./release\moc_sales_add_order.o
+./release\moc_sales_customers.o
+./release\moc_sales_manager.o
+);

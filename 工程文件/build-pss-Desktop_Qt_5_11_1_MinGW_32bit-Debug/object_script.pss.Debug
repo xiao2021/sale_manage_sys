@@ -1,0 +1,15 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\admin_main_page.o
+./debug\new_delivery.o
+./debug\sales_add_order.o
+./debug\sales_customers.o
+./debug\sales_manager.o
+./debug\moc_mainwindow.o
+./debug\moc_admin_main_page.o
+./debug\moc_new_delivery.o
+./debug\moc_sales_add_order.o
+./debug\moc_sales_customers.o
+./debug\moc_sales_manager.o
+);

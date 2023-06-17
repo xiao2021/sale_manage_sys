@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Admin_main_page</class>
+ <widget class="QMainWindow" name="Admin_main_page">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>636</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>产品生产与销售管理系统</string>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_15">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="main_page">
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="text">
+           <string>欢迎使用产品生产与销售管理系统(工厂端)</string>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::AutoText</enum>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_customers_info">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QTableWidget" name="table_customers_info">
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>100</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>序号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>姓名</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>手机</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>性别</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>省份</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>城市</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>区县</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>地址</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>电邮</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>邮编</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>公司</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>新建列</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>登记</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_customers_modify"/>
+      <widget class="QWidget" name="page_sales_shops_info">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QTableView" name="tableView_sales_shops_info"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_sales_shops_modify"/>
+      <widget class="QWidget" name="page_workshops_info">
+       <widget class="QTableView" name="tableView_workshops_info">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>592</width>
+          <height>385</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_workshops_modify"/>
+      <widget class="QWidget" name="page_workers_info">
+       <layout class="QGridLayout" name="gridLayout_16">
+        <item row="0" column="0" colspan="2">
+         <widget class="QTableWidget" name="table_workers_info">
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>100</number>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>序号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>姓名</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>手机</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>性别</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>省份</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>城市</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>区县</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>地址</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>电邮</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>邮编</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>车间</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>生日</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_workers_modify"/>
+      <widget class="QWidget" name="page_orders_info">
+       <layout class="QGridLayout" name="gridLayout_8">
+        <item row="0" column="0" rowspan="2">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>产品数据查询</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="0" column="0">
+              <layout class="QFormLayout" name="formLayout">
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_4">
+                 <property name="text">
+                  <string>名称</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineEdit_products_name"/>
+               </item>
+               <item row="1" column="0">
+                <widget class="QLabel" name="label_2">
+                 <property name="text">
+                  <string>种类</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QComboBox" name="combo_products_type">
+                 <property name="currentText">
+                  <string>柜类</string>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>柜类</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>桌类</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>坐具类</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>床类</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>箱架类</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>其他类</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QLabel" name="label_3">
+                 <property name="text">
+                  <string>材料</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QComboBox" name="combo_products_material">
+                 <item>
+                  <property name="text">
+                   <string>木质</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>金属</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>塑料</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>竹藤</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>玻璃</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>皮布</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>复合</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>其他</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="label_7">
+                 <property name="text">
+                  <string>风格</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QComboBox" name="combo_products_style">
+                 <item>
+                  <property name="text">
+                   <string>欧式</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>简欧</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>北欧</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>中式</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>新中式</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>现代风</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>美式</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>地中海</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>田园</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>日式</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>东南亚</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>新古典</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string>其他</string>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="text">
+                    <string>质量</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="text">
+                    <string>体积</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="text">
+                    <string>价格</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout">
+                   <item>
+                    <widget class="QLabel" name="label_8">
+                     <property name="text">
+                      <string>min</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_minWeight"/>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_9">
+                     <property name="text">
+                      <string>max</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_maxWeight"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_2">
+                   <item>
+                    <widget class="QLabel" name="label_11">
+                     <property name="text">
+                      <string>min</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_minVolume"/>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_12">
+                     <property name="text">
+                      <string>max</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_maxVolume"/>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_3">
+                   <item>
+                    <widget class="QLabel" name="label_13">
+                     <property name="text">
+                      <string>min</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_products_minPrice"/>
+                   </item>
+                   <item>
+                    <widget class="QLabel" name="label_14">
+                     <property name="text">
+                      <string>max</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="QLineEdit" name="lineEdit_products_maxPrice"/>
+                   </item>
+                  </layout>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_query_products">
+               <property name="text">
+                <string>条件查询</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QPushButton" name="pushButton_query_products_all">
+               <property name="text">
+                <string>查询所有</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTableView" name="tableView_products_info"/>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>产品数据添加</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="2" column="0">
+            <layout class="QFormLayout" name="formLayout_3">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_19">
+               <property name="text">
+                <string>重量</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_weight_add"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_22">
+               <property name="text">
+                <string>体积</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_Volume_add"/>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_25">
+               <property name="text">
+                <string>价格</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="lineEdit_Price_add"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_26">
+               <property name="text">
+                <string>车间</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QComboBox" name="combo_workshop_add">
+               <item>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="0">
+            <layout class="QFormLayout" name="formLayout_2">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_15">
+               <property name="text">
+                <string>名称</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="lineEdit_products_name_add"/>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_16">
+               <property name="text">
+                <string>种类</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QComboBox" name="combo_products_type_add">
+               <property name="currentText">
+                <string>柜类</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>柜类</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>桌类</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>坐具类</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>床类</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>箱架类</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>其他类</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>材料</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QComboBox" name="combo_products_material_add">
+               <item>
+                <property name="text">
+                 <string>木质</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>金属</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>塑料</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>竹藤</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>玻璃</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>皮布</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>复合</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>其他</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>风格</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QComboBox" name="combo_products_style_add">
+               <item>
+                <property name="text">
+                 <string>欧式</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>简欧</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>北欧</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>中式</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>新中式</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>现代风</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>美式</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>地中海</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>田园</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>日式</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>东南亚</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>新古典</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>其他</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="0">
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>3</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>111</width>
+               <height>1</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="5" column="0">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="0">
+            <widget class="QPushButton" name="pushButton_add">
+             <property name="text">
+              <string>添加数据</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>产品数据删除</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="0" column="0">
+            <widget class="QPushButton" name="pushButton_delete">
+             <property name="text">
+              <string>删除数据</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>636</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_customers">
+    <property name="title">
+     <string>顾客管理</string>
+    </property>
+    <addaction name="action_customers_info"/>
+    <addaction name="action_customers_modify"/>
+   </widget>
+   <widget class="QMenu" name="menu_sales_shops">
+    <property name="title">
+     <string>销售点管理</string>
+    </property>
+    <addaction name="action_sales_shops_info"/>
+    <addaction name="action_sales_shops_modify"/>
+   </widget>
+   <widget class="QMenu" name="menu_workshops">
+    <property name="title">
+     <string>车间管理</string>
+    </property>
+    <addaction name="action_workshops_info"/>
+    <addaction name="action_workshops_modify"/>
+   </widget>
+   <widget class="QMenu" name="menu_workers">
+    <property name="title">
+     <string>工人管理</string>
+    </property>
+    <addaction name="action_workers_info"/>
+    <addaction name="action_workers_modify"/>
+   </widget>
+   <widget class="QMenu" name="menu_products">
+    <property name="title">
+     <string>产品查询</string>
+    </property>
+    <addaction name="action_products_info"/>
+    <addaction name="action_products_modify"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>数据库连接</string>
+    </property>
+    <addaction name="actionDisconnect"/>
+    <addaction name="actionReconnect"/>
+   </widget>
+   <addaction name="menu_customers"/>
+   <addaction name="menu_sales_shops"/>
+   <addaction name="menu_workshops"/>
+   <addaction name="menu_workers"/>
+   <addaction name="menu_products"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_customers_info">
+   <property name="text">
+    <string>顾客信息</string>
+   </property>
+  </action>
+  <action name="action_customers_modify">
+   <property name="text">
+    <string>修改顾客信息</string>
+   </property>
+   <property name="iconText">
+    <string>修改顾客信息</string>
+   </property>
+  </action>
+  <action name="action_sales_shops_info">
+   <property name="text">
+    <string>销售点信息</string>
+   </property>
+  </action>
+  <action name="action_sales_shops_modify">
+   <property name="text">
+    <string>修改销售点信息</string>
+   </property>
+  </action>
+  <action name="action_workshops_info">
+   <property name="text">
+    <string>车间信息</string>
+   </property>
+  </action>
+  <action name="action_workshops_modify">
+   <property name="text">
+    <string>修改车间信息</string>
+   </property>
+  </action>
+  <action name="action_workers_info">
+   <property name="text">
+    <string>工人信息</string>
+   </property>
+  </action>
+  <action name="action_workers_modify">
+   <property name="text">
+    <string>修改工人信息</string>
+   </property>
+  </action>
+  <action name="action_products_info">
+   <property name="text">
+    <string>产品信息</string>
+   </property>
+  </action>
+  <action name="action_products_modify">
+   <property name="text">
+    <string>修改订单信息</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="text">
+    <string>断开连接</string>
+   </property>
+  </action>
+  <action name="actionReconnect">
+   <property name="text">
+    <string>重新连接</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
